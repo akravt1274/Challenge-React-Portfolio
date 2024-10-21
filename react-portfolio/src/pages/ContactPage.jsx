@@ -10,6 +10,9 @@ function ContactPage() {
   const [errorMessage, setErrorMessage] = useState("");
 
   const handleInputChange = (e) => {
+    // Clearing the error message once input provided
+    setErrorMessage("");
+
     // Getting the value and name of the input which triggered the change
     const { name, value } = e.target;
 
@@ -21,11 +24,8 @@ function ContactPage() {
       : setMessage(value);
   };
 
-  const handleFormSubmit = (e) => {
-    // Preventing the default behavior of the form submit (which is to refresh the page)
-    e.preventDefault();
-
-    // Validating user input and email address format
+  const handleInputFocus = () => {
+    // Validating user input
     if (!name) {
       setErrorMessage("Name is required.");
       return;
@@ -36,6 +36,11 @@ function ContactPage() {
       setErrorMessage("Message is required.");
       return;
     }
+  };
+
+  const handleFormSubmit = (e) => {
+    // Preventing the default behavior of the form submit (which is to refresh the page)
+    e.preventDefault();
 
     // Validating email address format
     if (!validateEmail(email)) {
@@ -79,6 +84,7 @@ function ContactPage() {
                 placeholder="Enter name..."
                 value={name}
                 onChange={handleInputChange}
+                onFocus={handleInputFocus}
               />
             </div>
 
@@ -94,6 +100,7 @@ function ContactPage() {
                 placeholder="Enter email address..."
                 value={email}
                 onChange={handleInputChange}
+                onFocus={handleInputFocus}
               />
             </div>
 
@@ -112,6 +119,7 @@ function ContactPage() {
                 placeholder="Enter message..."
                 value={message}
                 onChange={handleInputChange}
+                onFocus={handleInputFocus}
               ></textarea>
             </div>
 

@@ -1,4 +1,4 @@
-import { FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub, FaStackOverflow } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 function Footer() {
@@ -15,8 +15,11 @@ function Footer() {
         <Link target="blank" to="https://github.com/akravt1274/">
           <FaGithub className="inline text-white m-3 mr-2" />
         </Link>
-        <Link target="blank" to="#">
-          <FaTwitter className="inline text-white m-3 mr-2" />
+        <Link
+          target="blank"
+          to="https://stackoverflow.com/users/27903917/user27903917"
+        >
+          <FaStackOverflow className="inline text-white m-3 mr-2" />
         </Link>
       </div>
     </footer>

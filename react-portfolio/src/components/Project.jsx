@@ -28,7 +28,7 @@ function Project({ project }) {
 
         <div></div>
 
-        {/* {project.image && (
+        {project.image && (
           <PhotoProvider maskOpacity={0.5}>
             <PhotoView src={project.image}>
               <button className="text-indigo-500 mb-5 hover:text-indigo-600">
@@ -36,8 +36,8 @@ function Project({ project }) {
               </button>
             </PhotoView>
           </PhotoProvider>
-        )} */}
-        {project.image && <img src={project.image} alt="project screenshot" />}
+        )}
+        {/* {project.image && <img src={project.image} alt="project screenshot" />} */}
 
         <div className="border border-gray-100"></div>
 
