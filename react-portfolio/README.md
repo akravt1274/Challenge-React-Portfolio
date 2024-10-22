@@ -47,9 +47,9 @@ Built using the following technologies:
 ![alt text](/react-portfolio/src/assets/images/image-2.png)
 
 ## Review
-The URL of the functional, deployed application:
+The URL of the functional, deployed application: https://creative-mousse-82408e.netlify.app
 
-The URL of the GitHub repository: https://github.com/akravt1274/Challenge-React-Portfolio/tree/main/react-portfolio
+The URL of the GitHub repository: https://github.com/akravt1274/Challenge-React-Portfolio
 
 ## Contact
 Contact me with any ideas or requests: akravt1274@gmail.com
