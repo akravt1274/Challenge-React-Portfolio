@@ -10,7 +10,7 @@ function About() {
         </h2>
         <div className="bg-white px-6 py-8 mb-4 shadow-md rounded-md border m-4 md:m-0">
           <div className="px-16 py-4">
-            <img className="w-auto mb-8" src={photo} alt="photo" />
+            {/* <img className="w-auto mb-8" src={photo} alt="photo" /> */}
             <p>
               A Full Stack Developer with a recent completion of a coding
               bootcamp, skilled in both front-end and back-end technologies.
